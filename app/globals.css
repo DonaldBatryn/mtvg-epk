@@ -1,26 +1,83 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
+  /* --background: gray; */
   --foreground: #171717;
 }
 
 @theme inline {
-  --color-background: var(--background);
+  /* --color-background: var(--background); */
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
 }
 
-@media (prefers-color-scheme: dark) {
+/* @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
+    --background: darkgrey;
     --foreground: #ededed;
   }
-}
+} */
 
 body {
-  background: var(--background);
+  background: #272727;
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
+}
+
+.mtvg-body {
+  background-color: #272727;
+  margin: 0;
+  padding: 16px;
+  min-width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.main-nav {
+  width: 100%;
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 90px;
+  margin: 25px 25px 25px 25px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #272727;
+  border-bottom: 1px solid #ededed;
+}
+
+.main-nav a {
+  cursor: pointer;
+  font-weight: 700;
+  color: #ededed;
+  font-size: 20px;
+  /* font-style: italic; */
+  margin-right: 50px;
+  padding: 12px 20px;
+  border-radius: 5px;
+  width: 180px;
+  text-align: center;
+}
+
+.main-nav a:hover,
+.main-nav a.active {
+  color: white;
+  font-style: italic;
+  background-color: rgba(219, 222, 239, 0.8);
+}
+
+.nav-image {
+  visibility: visible;
+  margin-bottom: 20px;
+  position: relative;
+  top: 10;
+  left: 10;
+}
+
+#mtvg {
+  height: auto;
 }

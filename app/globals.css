@@ -81,3 +81,14 @@ body {
 #mtvg {
   height: auto;
 }
+
+h2 {
+  color: rgba(219, 222, 239, 0.8);
+  font-size: 20px;
+}
+
+.divider {
+  height: 3px;
+  border-bottom: 3px solid #ededed;
+  width: 70%;
+}

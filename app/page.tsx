@@ -16,6 +16,16 @@ const THEMES = [
   // "zombie",
 ];
 
+const SHOWS = [
+  {
+    date: new Date("12-19-2025"),
+    venue: "Metro Chicago",
+    link: "",
+    image: "",
+    time: "Doors - 6:30pm; Show - 7:00pm",
+  },
+];
+
 function getRandomInt(min, max) {
   min = Math.ceil(min);
   max = Math.floor(max);
@@ -122,15 +132,38 @@ export default function Home() {
             id="music"
             style={{
               width: "100%",
-              height: "800px",
+              height: "700px",
               padding: "16px",
               marginTop: "32px",
+              flexWrap: "wrap",
             }}
-            className="flex flex-col gap-4 text-base font-medium justify-start items-center"
+            // className="flex flex-col gap-4 text-base font-medium justify-start items-center"
           >
-            Add music here Add music here Add music here Add music here Add
-            music here Add music here Add music here Add music here Add music
-            here Add music here Add music here Add music here Add music here
+            <div style={{ display: "flex", flexWrap: "wrap" }}>
+              <iframe
+                width="500"
+                height="500"
+                style={{ marginRight: "20px" }}
+                src="https://www.youtube.com/embed/_1kBHk9mCWs?list=RD_1kBHk9mCWs"
+                title="mercutio   mtvghosts"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen
+              ></iframe>
+
+              <iframe
+                width="500"
+                height="500"
+                style={{ marginRight: "20px" }}
+                src="https://www.youtube.com/embed/E8uVM436l_s?list=RDE8uVM436l_s"
+                title="mtvghosts - The Wonder EP"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen
+              ></iframe>
+            </div>
           </div>
         )}
 
@@ -139,15 +172,13 @@ export default function Home() {
             id="shows"
             style={{
               width: "100%",
-              height: "800px",
+              height: "700px",
               padding: "16px",
               marginTop: "32px",
             }}
             className="flex flex-col gap-4 text-base font-medium justify-start items-center"
           >
-            Add shows here Add shows here Add shows here Add shows here Add
-            shows here Add shows here Add shows here Add shows here Add shows
-            here Add shows here Add shows here Add shows here Add shows here
+            <h1>Upcoming</h1>
           </div>
         )}
 
@@ -156,15 +187,17 @@ export default function Home() {
             id="merch"
             style={{
               width: "100%",
-              height: "800px",
+              height: "700px",
               padding: "16px",
               marginTop: "32px",
             }}
             className="flex flex-col gap-4 text-base font-medium justify-start items-center"
           >
-            Add merch here Add merch here Add merch here Add merch here Add
-            merch here Add merch here Add merch here Add merch here Add merch
-            here Add merch here Add merch here Add merch here Add merch here
+            <h2>
+              Add merch here Add merch here Add merch here Add merch here Add
+              merch here Add merch here Add merch here Add merch here Add merch
+              here Add merch here Add merch here Add merch here Add merch here
+            </h2>
           </div>
         )}
       </main>
